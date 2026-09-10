@@ -1,0 +1,42 @@
+{
+  "format_version": 1,
+  "source_project": "SovKit",
+  "source_commit": "c4cb820f8a1aec22a374bd60ce50abc065bd1be5",
+  "files": [
+    {
+      "source": "3rdparty/libnet/src/libnet_stun_server.cc",
+      "source_sha256": "8d319d1ba756052a726e895da6456a928e710b909c7b6890cfb606667f94d17d",
+      "destination": "src/libnet_stun_server.cc",
+      "destination_sha256": "8d319d1ba756052a726e895da6456a928e710b909c7b6890cfb606667f94d17d",
+      "mode": "exact"
+    },
+    {
+      "source": "3rdparty/libnet/include/libnet_stun_server.h",
+      "source_sha256": "8a0a9675bc30b0b3f4811adf14e870908e787ad9e85cdac0816693e4f09d512d",
+      "destination": "include/libnet_stun_server.h",
+      "destination_sha256": "8a0a9675bc30b0b3f4811adf14e870908e787ad9e85cdac0816693e4f09d512d",
+      "mode": "exact"
+    },
+    {
+      "source": "3rdparty/libnet/include/libnet_uv.h",
+      "source_sha256": "9cbd27e059ad768d4e5d4e9819e14e568e672e1583deeb9eb1da4c42c130f042",
+      "destination": "include/libnet_uv.h",
+      "destination_sha256": "e90465652136a250add9b38a41cb184f7be027e8b6f4f6f3c19dc4b87b9b2c05",
+      "mode": "endpoint-header"
+    },
+    {
+      "source": "3rdparty/libnet/src/libnet_uv.cc",
+      "source_sha256": "25a601655740e12b56a27ea7b294b45f3b1d0b79e5e43c9b20f320b4f735860b",
+      "destination": "src/endpoint.cc",
+      "destination_sha256": "32d3f32b5582e45a0fa25d0788e7f4f7e605dc395589f0140bd732e893e923e7",
+      "mode": "endpoint-source"
+    },
+    {
+      "source": "3rdparty/libnet/LICENSE",
+      "source_sha256": "dd04df42659a8e9f5191d2435b55cac2d318dfcfc6eade38c9586c77ce5bbaae",
+      "destination": "LICENSE",
+      "destination_sha256": "dd04df42659a8e9f5191d2435b55cac2d318dfcfc6eade38c9586c77ce5bbaae",
+      "mode": "exact"
+    }
+  ]
+}

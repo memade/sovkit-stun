@@ -1,0 +1,11 @@
+@PACKAGE_INIT@
+include(CMakeFindDependencyMacro)
+find_dependency(Threads)
+include("${CMAKE_CURRENT_LIST_DIR}/StunLibuv.cmake")
+if(NOT TARGET SovkitStun::libuv)
+  set(SovkitStun_FOUND FALSE)
+  set(SovkitStun_NOT_FOUND_MESSAGE "Install public libuv >= 1.44 (CMake package or pkg-config)")
+  return()
+endif()
+include("${CMAKE_CURRENT_LIST_DIR}/SovkitStunTargets.cmake")
+check_required_components(SovkitStun)

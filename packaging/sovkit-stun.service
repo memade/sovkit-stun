@@ -1,0 +1,27 @@
+[Unit]
+Description=SovKit standalone IPv4 STUN Binding server
+After=network.target
+
+[Service]
+Type=simple
+DynamicUser=yes
+ExecStart=/usr/local/bin/sovkit-stun --config /etc/sovkit-stun/server.conf
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=yes
+RestrictAddressFamilies=AF_INET AF_UNIX
+CapabilityBoundingSet=
+UMask=0077
+MemoryMax=64M
+TasksMax=16
+LimitCORE=0
+Restart=on-failure
+RestartPreventExitStatus=2
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

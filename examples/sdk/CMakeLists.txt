@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(sovkit_stun_host LANGUAGES CXX)
+find_package(SovkitStun 0.1.0 EXACT CONFIG REQUIRED)
+add_executable(stun_host main.cc)
+target_link_libraries(stun_host PRIVATE SovkitStun::stun)

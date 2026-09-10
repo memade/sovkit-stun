@@ -1,0 +1,15 @@
+sovkit-stun
+Copyright (c) 2026 memade
+
+This source distribution contains the STUN server and Endpoint subset of
+SovKit's libnet component, which carries the MIT License retained in LICENSE.
+The export inventory and source hashes are recorded in docs/PROVENANCE.md and
+docs/export-manifest.json. No full SovKit SDK, client, business data, deployment
+records, or original repository history is included.
+
+libuv is an external build dependency. It is not vendored in this source tree.
+When redistributing a binary that includes libuv, ship the copyright and license
+notices supplied with the exact libuv build, including its bundled components.
+This repository's LICENSE alone does not cover those components.
+Reviewed libuv 1.52.1 redistribution notices are retained separately in
+packaging/licenses/libuv-1.52.1.txt, including LICENSE-extra, ISC and BSD notices.
